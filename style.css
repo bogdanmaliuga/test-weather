@@ -1,0 +1,107 @@
+body {
+    background: url(./img/background.png);
+}
+
+h1 {
+    font: 400 24px Arial;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.container {
+    width: 60%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+ul, li {
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+li {
+    color: white;
+    font: 400 18px Arial;
+}
+
+li span:first-child {
+    font: 400 24px Arial;
+}
+
+li span:nth-child(2) {
+    font: 400 22px Arial;
+}
+
+.field {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.field>input[type=text], .field>button {
+    display: block;
+    font: 400 18px Arial;
+}
+
+.field>input[type=text] {
+    flex: 1;
+    border:0;
+    padding: 0.6em;
+    color: white;
+    border: 2px solid white;
+    background-color: #3f51b5;
+    border-right: none;
+}
+
+.field>button {
+    padding: 0.6em 0.8em;
+    background-color: #fff;
+    color: #3f51b5;
+    border: none;
+}
+
+#clear{
+  position: fixed;
+  bottom: 5px;
+  padding: 0.6em 0.8em;
+  background-color: #fff;
+  color: #3f51b5;
+  border: none;
+  cursor: pointer;
+}
+.field>button:hover {
+    cursor: pointer;
+}
+*:focus {
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+
+/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+
+/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+@media screen and (max-width:600px) {
+  .container{
+    width: 95%;
+  }
+}
+.cbalink {
+    display: none;
+}
